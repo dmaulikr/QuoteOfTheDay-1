@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iJe-Tp-u53">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="xAi-Os-seA">
+            <objects>
+                <viewController storyboardIdentifier="RootViewController" modalTransitionStyle="crossDissolve" id="iJe-Tp-u53" customClass="RootViewController" customModule="QuoteOfTheDay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gBM-TR-dFi"/>
+                        <viewControllerLayoutGuide type="bottom" id="1rC-CF-hbZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h2I-vW-z9r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Ani-RX-NOS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ani-RX-NOS" firstAttribute="top" secondItem="h2I-vW-z9r" secondAttribute="top" id="Cn8-DH-YcO"/>
+                            <constraint firstAttribute="trailing" secondItem="Ani-RX-NOS" secondAttribute="trailing" id="VcQ-5R-gyk"/>
+                            <constraint firstItem="Ani-RX-NOS" firstAttribute="leading" secondItem="h2I-vW-z9r" secondAttribute="leading" id="xBP-Lc-hdL"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMf-nm-a3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="-27"/>
+        </scene>
+        <!--New Quotes View Controller-->
+        <scene sceneID="Vva-KW-ycY">
+            <objects>
+                <viewController storyboardIdentifier="NewQuotesViewController" id="6n2-lL-tSd" customClass="NewQuotesViewController" customModule="QuoteOfTheDay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XC6-0O-OTc"/>
+                        <viewControllerLayoutGuide type="bottom" id="sKe-GX-532"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EB5-Nx-VCx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Pk2-cP-ipl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pk2-cP-ipl" secondAttribute="trailing" id="nD4-85-Ngg"/>
+                            <constraint firstItem="Pk2-cP-ipl" firstAttribute="leading" secondItem="EB5-Nx-VCx" secondAttribute="leading" id="r0K-2S-y5s"/>
+                            <constraint firstItem="Pk2-cP-ipl" firstAttribute="top" secondItem="EB5-Nx-VCx" secondAttribute="top" id="yI1-nV-rmF"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zvg-JQ-lZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="-27"/>
+        </scene>
+        <!--Add To Favourites View Controller-->
+        <scene sceneID="b1Q-Sl-Dco">
+            <objects>
+                <viewController storyboardIdentifier="AddToFavouritesViewController" id="rwS-bw-wl0" customClass="AddToFavouritesViewController" customModule="QuoteOfTheDay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Ud-EK-Qr6"/>
+                        <viewControllerLayoutGuide type="bottom" id="dQF-as-5kQ"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="Epp-1n-ZOn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.01" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFavourite" translatesAutoresizingMaskIntoConstraints="NO" id="Dqx-CL-0AC">
+                                <rect key="frame" x="20" y="0.0" width="280" height="558"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Dqx-CL-0AC" firstAttribute="leading" secondItem="Epp-1n-ZOn" secondAttribute="leading" constant="20" id="9fK-yy-TH6"/>
+                            <constraint firstItem="dQF-as-5kQ" firstAttribute="top" secondItem="Dqx-CL-0AC" secondAttribute="bottom" constant="10" id="Rih-lX-I5M"/>
+                            <constraint firstAttribute="trailing" secondItem="Dqx-CL-0AC" secondAttribute="trailing" constant="20" id="aQC-OA-84U"/>
+                            <constraint firstItem="Dqx-CL-0AC" firstAttribute="top" secondItem="Epp-1n-ZOn" secondAttribute="top" id="uuI-Kk-7ye"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="icon" destination="Dqx-CL-0AC" id="8WS-dE-7ZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgQ-oj-ri4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="632"/>
+        </scene>
+        <!--Wait View Controller-->
+        <scene sceneID="7UW-EC-PRd">
+            <objects>
+                <viewController storyboardIdentifier="WaitViewController" id="8eD-fF-bLp" customClass="WaitViewController" customModule="QuoteOfTheDay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lFE-GE-pOF"/>
+                        <viewControllerLayoutGuide type="bottom" id="9gT-wT-Lun"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5BV-7M-YuF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="X5j-Sd-3uN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BackgroundTorn" translatesAutoresizingMaskIntoConstraints="NO" id="3f4-d3-SKj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xTX-Am-S19">
+                                <rect key="frame" x="142" y="265" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3f4-d3-SKj" secondAttribute="trailing" id="NP9-Cz-QlY"/>
+                            <constraint firstItem="X5j-Sd-3uN" firstAttribute="leading" secondItem="5BV-7M-YuF" secondAttribute="leading" id="SFM-mM-Evy"/>
+                            <constraint firstAttribute="centerX" secondItem="xTX-Am-S19" secondAttribute="centerX" id="a8U-gb-fiG"/>
+                            <constraint firstItem="3f4-d3-SKj" firstAttribute="leading" secondItem="5BV-7M-YuF" secondAttribute="leading" id="ghg-9l-tUn"/>
+                            <constraint firstAttribute="trailing" secondItem="X5j-Sd-3uN" secondAttribute="trailing" id="lkq-5O-PZl"/>
+                            <constraint firstItem="3f4-d3-SKj" firstAttribute="top" secondItem="5BV-7M-YuF" secondAttribute="top" id="pWH-Kr-qdd"/>
+                            <constraint firstAttribute="centerY" secondItem="xTX-Am-S19" secondAttribute="centerY" id="x1f-Ki-dks"/>
+                            <constraint firstItem="X5j-Sd-3uN" firstAttribute="top" secondItem="5BV-7M-YuF" secondAttribute="top" id="yJw-sj-xey"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="xTX-Am-S19" id="3d7-3f-kTa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHM-mB-cbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="632"/>
+        </scene>
+        <!--Quote View Controller-->
+        <scene sceneID="bra-QY-X6k">
+            <objects>
+                <viewController storyboardIdentifier="QuoteViewController" id="PPa-Ed-vIe" customClass="QuoteViewController" customModule="QuoteOfTheDay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3wa-z0-DuF"/>
+                        <viewControllerLayoutGuide type="bottom" id="3G2-id-OaU"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="Nk8-Zi-ZYd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BackgroundTorn" translatesAutoresizingMaskIntoConstraints="NO" id="r5Q-1u-wZm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Выебать - не родит" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="bBu-Rl-Df8">
+                                <rect key="frame" x="20" y="239" width="280" height="31"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Толстыко" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lg-rn-6H7">
+                                <rect key="frame" x="20" y="278" width="280" height="21"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2014" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0C-7s-jxs">
+                                <rect key="frame" x="20" y="307" width="280" height="21"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="№" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLA-jH-47c">
+                                <rect key="frame" x="20" y="531" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="r5Q-1u-wZm" secondAttribute="trailing" id="2Lg-yu-h47"/>
+                            <constraint firstAttribute="trailing" secondItem="7Lg-rn-6H7" secondAttribute="trailing" constant="20" id="79y-Ch-VlP"/>
+                            <constraint firstItem="7Lg-rn-6H7" firstAttribute="top" secondItem="bBu-Rl-Df8" secondAttribute="bottom" constant="8" id="7zy-qJ-S1a"/>
+                            <constraint firstItem="bBu-Rl-Df8" firstAttribute="leading" secondItem="Nk8-Zi-ZYd" secondAttribute="leading" constant="20" id="KUa-nJ-fWo"/>
+                            <constraint firstItem="r5Q-1u-wZm" firstAttribute="leading" secondItem="Nk8-Zi-ZYd" secondAttribute="leading" id="NaY-zU-CgQ"/>
+                            <constraint firstItem="r5Q-1u-wZm" firstAttribute="top" secondItem="Nk8-Zi-ZYd" secondAttribute="top" id="XGV-L2-toW"/>
+                            <constraint firstItem="OLA-jH-47c" firstAttribute="leading" secondItem="Nk8-Zi-ZYd" secondAttribute="leading" constant="20" id="YV9-Rh-Ayj"/>
+                            <constraint firstItem="z0C-7s-jxs" firstAttribute="top" secondItem="7Lg-rn-6H7" secondAttribute="bottom" constant="8" id="ZJy-fm-qbv"/>
+                            <constraint firstItem="7Lg-rn-6H7" firstAttribute="leading" secondItem="Nk8-Zi-ZYd" secondAttribute="leading" constant="20" id="aOA-Vt-gNh"/>
+                            <constraint firstAttribute="centerY" secondItem="bBu-Rl-Df8" secondAttribute="centerY" constant="29" id="dXP-tz-Y7b"/>
+                            <constraint firstItem="z0C-7s-jxs" firstAttribute="leading" secondItem="Nk8-Zi-ZYd" secondAttribute="leading" constant="20" id="igN-r1-qGm"/>
+                            <constraint firstAttribute="trailing" secondItem="bBu-Rl-Df8" secondAttribute="trailing" constant="20" id="oS5-5d-Rsa"/>
+                            <constraint firstItem="3G2-id-OaU" firstAttribute="top" secondItem="OLA-jH-47c" secondAttribute="bottom" constant="16" id="un7-Kb-L1b"/>
+                            <constraint firstAttribute="trailing" secondItem="z0C-7s-jxs" secondAttribute="trailing" constant="20" id="xnF-gH-rnd"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="7Lg-rn-6H7" id="9s0-M2-7Jw"/>
+                        <outlet property="backgroundView" destination="r5Q-1u-wZm" id="l8f-tv-sx1"/>
+                        <outlet property="idLabel" destination="OLA-jH-47c" id="AMw-tL-5TZ"/>
+                        <outlet property="textLabel" destination="bBu-Rl-Df8" id="9zc-cu-szg"/>
+                        <outlet property="yearLabel" destination="z0C-7s-jxs" id="Umy-tJ-hbJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kI9-pz-t2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="-27"/>
+        </scene>
+        <!--Remove From Favourites View Controller-->
+        <scene sceneID="Lfp-EQ-iZv">
+            <objects>
+                <viewController storyboardIdentifier="RemoveFromFavouritesViewController" id="lDn-mC-Y0B" customClass="RemoveFromFavouritesViewController" customModule="QuoteOfTheDay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ga-IS-6xF"/>
+                        <viewControllerLayoutGuide type="bottom" id="yCg-1W-Oi6"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="PQy-ng-IH8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.01" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RemoveFavourite" translatesAutoresizingMaskIntoConstraints="NO" id="uJn-r9-8Z0">
+                                <rect key="frame" x="20" y="10" width="280" height="558"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uJn-r9-8Z0" firstAttribute="leading" secondItem="PQy-ng-IH8" secondAttribute="leading" constant="20" id="9Uu-iY-oFi"/>
+                            <constraint firstItem="uJn-r9-8Z0" firstAttribute="top" secondItem="PQy-ng-IH8" secondAttribute="top" constant="10" id="SQF-Tb-uGg"/>
+                            <constraint firstItem="yCg-1W-Oi6" firstAttribute="top" secondItem="uJn-r9-8Z0" secondAttribute="bottom" id="TXu-Sr-g7J"/>
+                            <constraint firstAttribute="trailing" secondItem="uJn-r9-8Z0" secondAttribute="trailing" constant="20" id="WJY-H1-g6K"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="icon" destination="uJn-r9-8Z0" id="W9d-ai-JtG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbd-pM-bsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="-671"/>
+        </scene>
+        <!--Favourites View Controller-->
+        <scene sceneID="qqe-DU-aRb">
+            <objects>
+                <viewController storyboardIdentifier="FavouritesViewController" id="kAr-us-n8I" customClass="FavouritesViewController" customModule="QuoteOfTheDay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iXz-Ma-3Az"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3r-sv-BkM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KAw-ZA-B05">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="TFj-Td-Bw2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TFj-Td-Bw2" secondAttribute="trailing" id="lhE-bV-CCj"/>
+                            <constraint firstItem="TFj-Td-Bw2" firstAttribute="leading" secondItem="KAw-ZA-B05" secondAttribute="leading" id="m4g-GU-2TF"/>
+                            <constraint firstItem="TFj-Td-Bw2" firstAttribute="top" secondItem="KAw-ZA-B05" secondAttribute="top" id="p5k-6t-2Mj"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEG-C1-Rjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="-671"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddFavourite" width="100" height="100"/>
+        <image name="Background" width="320" height="480"/>
+        <image name="BackgroundTorn" width="320" height="480"/>
+        <image name="RemoveFavourite" width="100" height="100"/>
+    </resources>
+</document>
